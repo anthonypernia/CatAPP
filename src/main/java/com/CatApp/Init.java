@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Init {
     public static void main(String[] args) throws IOException {
         int optionMenu = -1;
-        String [] button = {"1. Ver gatos", "2. Salir"};
+        String [] button = {"1. Ver gatos", "2. Ver favoritos","3. Salir"};
         do{
             String option = (String)JOptionPane
                     .showInputDialog(null, "Gatos Java",
@@ -21,6 +21,9 @@ public class Init {
             switch (optionMenu){
                 case 0:
                     CatService.watchCat();
+                    break;
+                case 1:
+                    CatService.watchFavorites();
                     break;
                 default:
                     break;

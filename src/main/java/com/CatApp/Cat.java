@@ -1,10 +1,10 @@
 package com.CatApp;
 
 public class Cat {
-    String id;
-    String url;
-    String apiKey="9210b18e-9d3a-4a46-ae5c-14cf68aad7d2";
-    String iamge;
+    private String id;
+    private String url;
+    private String apiKey="9210b18e-9d3a-4a46-ae5c-14cf68aad7d2";
+    private String iamge;
 
     public String getId() {
         return id;
